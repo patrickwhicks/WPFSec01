@@ -38,3 +38,8 @@ var weeklyContribution = weeklyContribution.toFixed(2);
 
 console.log(weeklyContribution);
 
+var timeNeeded = (retirementAmount / weeklyContribution);
+
+console.log(timeNeeded);
+
+
