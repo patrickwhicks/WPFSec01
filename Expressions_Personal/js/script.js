@@ -23,3 +23,7 @@ console.log(currentYear);
 var retirementAmount = prompt(name + ", how much money do you want to retire with?");
 
 console.log(retirementAmount);
+
+var moneySaved = prompt(name + ", how much of your weekly salary do you put into a savings account or money mutual fund?");
+
+console.log(moneySaved);
