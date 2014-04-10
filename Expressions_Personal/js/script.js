@@ -24,11 +24,15 @@ var retirementAmount = prompt(name + ", how much money do you want to retire wit
 
 console.log(retirementAmount);
 
-var moneySaved = prompt(name + ", how much of your weekly salary do you put into a savings account or money mutual fund?");
+var moneySaved = prompt(name + ", what percent of your weekly salary do you put into a savings account or money mutual fund?");
 
 console.log(moneySaved);
 
 var interestRate = prompt(name + ", what is the interest rate that your account is currently growing at?");
 
 console.log(interestRate);
+
+var weeklyContribution = (income / 52);
+
+console.log(weeklyContribution);
 
