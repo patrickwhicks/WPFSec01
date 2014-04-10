@@ -29,6 +29,8 @@ console.log(volCancelled);
 
 var goodBusiness = (numVolume-volCancelled); 
 
+//Defining the average per guest for the user
+
 var apg = (goodBusiness/numTours); 
 
 console.log(apg);
