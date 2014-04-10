@@ -26,3 +26,20 @@ console.log(fourth);
 alert("Unfortunately, " + name + ", " + fourth + " has been bitten whilest cowering in a dark, damp corner.  You never needed " + fourth + " anyway.");
 
 var walkingDead = [ "first", "second", "third", "fourth"];
+
+var zombies = prompt("Ok, " + name + ", take a deep breath and look around.  How many zombies can you count?");
+
+console.log(zombies);
+
+alert("They are getting closer! Be prepared, " + name + ", " + first + ", " + second + ", and " + third + ".");
+
+var nameKilled = prompt("You have been bitten badly, " + name + ", lets hope it was not in vain. \n How many zombies did you kill?");
+
+var firstKilled = prompt("You did well kid, but we don\'t know for sure yet.  How many zombies did " + first + " kill?");
+
+var secondKilled = prompt("And what about " + second + "?");
+
+var thirdKilled = prompt("Please tell me " + third + " held up under pressure? How many did " + third + " take out?");
+
+
+
