@@ -28,10 +28,6 @@ var moneySaved = Number(prompt(name + ", what percent of your weekly salary do y
 
 console.log(moneySaved);
 
-var interestRate = Number(prompt(name + ", what is the interest rate that your account is currently growing at?"));
-
-console.log(interestRate);
-
 var weeklyContribution = (income / 52) / (moneySaved);
 
 var weeklyContribution = weeklyContribution.toFixed(2);
@@ -41,5 +37,9 @@ console.log(weeklyContribution);
 var timeNeeded = (retirementAmount / weeklyContribution);
 
 console.log(timeNeeded);
+
+var yearsNeeded = (timeNeeded / 52);
+
+console.log(yearsNeeded);
 
 
