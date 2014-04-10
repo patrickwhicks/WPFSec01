@@ -32,3 +32,7 @@ var goodBusiness = (numVolume-volCancelled);
 var apg = (goodBusiness/numTours); 
 
 console.log(apg);
+
+//Alerting the user to their apg
+
+alert(name + ", your average per guest is: " + apg + "!");
