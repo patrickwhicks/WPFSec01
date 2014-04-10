@@ -32,7 +32,9 @@ var interestRate = Number(prompt(name + ", what is the interest rate that your a
 
 console.log(interestRate);
 
-var weeklyContribution = (income / 52) * (moneySaved);
+var weeklyContribution = (income / 52) / (moneySaved);
+
+var weeklyContribution = weeklyContribution.toFixed(2);
 
 console.log(weeklyContribution);
 
