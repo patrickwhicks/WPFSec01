@@ -9,19 +9,19 @@ console.log(name);
 
 //Promt user for number of clients seen in the last 60 days
 
-var numTours = prompt("How many clients did you meet in the last 60 days, " + name + "?");
+var numTours = Number(prompt("How many clients did you meet in the last 60 days, " + name + "?"));
 
 console.log(numTours);
 
 //Prompt user for the amount of volume that they wrote from those clients
 
-var numVolume = prompt("How much volume did you write from those clients, " + name + "?");
+var numVolume = Number(prompt("How much volume did you write from those clients, " + name + "?"));
 
 console.log(numVolume);
 
 //Prompt user for the amount of volume that cancelled from those clients
 
-var volCancelled = prompt("How much volume cancelled from those clients, " + name + "?");
+var volCancelled = Number(prompt("How much volume cancelled from those clients, " + name + "?"));
 
 console.log(volCancelled);
 
