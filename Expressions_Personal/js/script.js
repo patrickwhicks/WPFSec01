@@ -34,12 +34,24 @@ var weeklyContribution = weeklyContribution.toFixed(2);
 
 console.log(weeklyContribution);
 
-var timeNeeded = (retirementAmount / weeklyContribution);
+var timeNeeded = Number((retirementAmount / weeklyContribution));
 
 console.log(timeNeeded);
 
-var yearsNeeded = (timeNeeded / 52);
+var yearsNeeded = Number((timeNeeded / 52));
+var yearsNeeded = yearsNeeded.toFixed(0);
 
 console.log(yearsNeeded);
+
+var retirementAge = Number(age) + Number(yearsNeeded); 
+
+console.log(retirementAge);
+
+var retirementYear = Number(currentYear) + Number(yearsNeeded);
+console.log(retirementYear);
+
+console.log(name + ", you will need to work another " + yearsNeeded + " years to hit your retirement goal saving  $" + weeklyContribution + " a week in a non-interest baring account.  When you hit your goal, you will be " + retirementAge + " years old, and it will be the year " + retirementYear + ".");
+
+alert(name + ", you will need to work another " + yearsNeeded + " years to hit your retirement goal saving  $" + weeklyContribution + " a week in a non-interest baring account.  When you hit your goal, you will be " + retirementAge + " years old, and it will be the year " + retirementYear + ".");
 
 
