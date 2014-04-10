@@ -15,3 +15,8 @@ console.log(income);
 var age = prompt(name + ", how old are you?");
 
 console.log(age);
+
+var currentYear = prompt(name + ", what is the current year?");
+
+console.log(currentYear);
+
