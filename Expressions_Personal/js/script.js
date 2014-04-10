@@ -20,3 +20,6 @@ var currentYear = prompt(name + ", what is the current year?");
 
 console.log(currentYear);
 
+var retirementAmount = prompt(name + ", how much money do you want to retire with?");
+
+console.log(retirementAmount);
