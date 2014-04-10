@@ -18,3 +18,10 @@ console.log(numTours);
 var numVolume = prompt("How much volume did you write from those clients, " + name + "?");
 
 console.log(numVolume);
+
+//Prompt user for the amount of volume that cancelled from those clients
+
+var volCancelled = prompt("How much volume cancelled from those clients, " + name + "?");
+
+console.log(volCancelled);
+
