@@ -8,27 +8,27 @@ console.log(name);
 
 //Prompt user for their annual income
 
-var income = prompt(name + ", how much do you make a year?");
+var income = number(prompt(name + ", how much do you make a year?"));
 
 console.log(income);
 
-var age = prompt(name + ", how old are you?");
+var age = number(prompt(name + ", how old are you?"));
 
 console.log(age);
 
-var currentYear = prompt(name + ", what is the current year?");
+var currentYear = number(prompt(name + ", what is the current year?"));
 
 console.log(currentYear);
 
-var retirementAmount = prompt(name + ", how much money do you want to retire with?");
+var retirementAmount = number(prompt(name + ", how much money do you want to retire with?"));
 
 console.log(retirementAmount);
 
-var moneySaved = prompt(name + ", what percent of your weekly salary do you put into a savings account or money mutual fund?");
+var moneySaved = number(prompt(name + ", what percent of your weekly salary do you put into a savings account or money mutual fund?"));
 
 console.log(moneySaved);
 
-var interestRate = prompt(name + ", what is the interest rate that your account is currently growing at?");
+var interestRate = number(prompt(name + ", what is the interest rate that your account is currently growing at?"));
 
 console.log(interestRate);
 
