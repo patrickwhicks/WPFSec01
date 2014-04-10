@@ -31,7 +31,7 @@ var zombies = prompt("Ok, " + name + ", take a deep breath and look around.  How
 
 console.log(zombies);
 
-alert("They are getting closer! Be prepared, " + name + ", " + first + ", " + second + ", and " + third + ".");
+alert("They are getting closer! Be prepared " + name + ", " + first + ", " + second + ", and " + third + ".");
 
 var nameKilled = prompt("You have been bitten badly, " + name + ", lets hope it was not in vain. \n How many zombies did you kill?");
 
@@ -40,6 +40,15 @@ var firstKilled = prompt("You did well kid, but we don\'t know for sure yet.  Ho
 var secondKilled = prompt("And what about " + second + "?");
 
 var thirdKilled = prompt("Please tell me " + third + " held up under pressure? How many did " + third + " take out?");
+
+var takenDown = Number(nameKilled) + Number(firstKilled) + Number(secondKilled) + Number(thirdKilled); 
+
+console.log(takenDown);
+
+if(takenDown < zombies) alert("Sorry, " + name + ", your team couldn\'t handle the pressure.  You only killed " + takenDown + " of the " + zombies + " zombies that were attacking. \nToo bad you didn\'t have " + fourth + "!  Be prepared to be eaten!");
+
+if(takenDown > zombies) alert("Horray! " + name + ", " + first + ", " + second + ", " + third + ", your names will go down in history!  Even " + fourth + " may even get an honorable mention! \n You sucessfully killed all " + zombies + " zombies that were invading your town!");
+
 
 
 
