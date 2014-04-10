@@ -25,3 +25,10 @@ var volCancelled = Number(prompt("How much volume cancelled from those clients, 
 
 console.log(volCancelled);
 
+//Defining the amount of business that stuck
+
+var goodBusiness = (numVolume-volCancelled); 
+
+var apg = (goodBusiness/numTours); 
+
+console.log(apg);
