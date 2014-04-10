@@ -11,3 +11,7 @@ console.log(name);
 var income = prompt(name + ", how much do you make a year?");
 
 console.log(income);
+
+var age = prompt(name + ", how old are you?");
+
+console.log(age);
