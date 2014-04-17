@@ -1,78 +1,50 @@
-//Patrick W. Hicks  4/17/14 Conditionals Assignment
+//Patrick W. Hicks 4/17/2014 Conditionals Assignment
 
+//I am prompting the user for their name
 
-//Prompt user for their name
-
-var name = prompt("Hello! Please enter your name.");
+var name = prompt("Hello future guest!  What is your name?");
 
 console.log(name);
 
-//Prompt the user for their age and define as a numerical value
+//I am promting the user for their age
 
-var age = Number(prompt("Thanks, " + name + "!  How old are you?"));
+var guestAge = Number(prompt("How old are you, " + name + "?"));
 
-console.log(age);
+console.log(guestAge);
 
-// Defining years left for future need
+if (guestAge <= 22) { console.log("I'm sorry, " + name + ", you do not match the age requirements to  tour with our company."); } else {
 
-var yearsLeft = 23 - age;
+//I am prompting the user for their houshold income
 
-console.log(yearsLeft);
-
-//Defining conditional if statements for age variable 
-
-if (age < 23) alert("I\'m sorry, " + name + ".  You must be at least 23 years old to tour with Vacation Villiage Resorts. Please return in " + yearsLeft + " years!");
-
-//Defining var maritalStatus if the user is over 23 years old 
-
-if (age >= 23 ) var maritalSatus = Number(prompt("Great!  Are you married, " + name + "? \n 1. Yes \n 2. No"));
-
-console.log(maritalSatus);
-
-//Defining var spouseName if the user is married
-
-if (maritalSatus == 1) var spouseName = prompt("And what is your spouse\'s name, " + name +"?");
-
-//Prompting user to see if spouse will be attending the presentation
-
-if (maritalSatus == 1) var bothAttending = Number(prompt("Will " + spouseName + " be attending the presentation with you? \n 1. Yes \n 2. No"));
-
-//Alerting user to company stipulations that forces them both to attend
-
-if (bothAttending == 2) alert("I\'m sorry, " + name + ", due to company regulations, " +spouseName + " must also attend the presentation.  Please schedule a date and time when you both are availible." );
-
-//Defining var income for the outcome
-
-if (bothAttending == 1 || maritalSatus == 2 ) var income = Number(prompt("What is your annual household income?"));
+var income = Number(prompt("What is your household income? \n 1. $10,000 - $35,000 \n 2. $36,000 - $55,000 \n 3. $56,000 - $85,000 \n 4. $86,000 +"));
 
 console.log(income);
 
-//Defining the variable outcome for var income
+//If the income level is less than 35,000, the client will not be able to come
+    
+if (income < 2) { console.log("I'm sorry, " + name + ", you do not match the income requirements to tour with our company.");
+                } else {
+                    
+//I am prompting the user for their martial status
 
-if (income <= 30000) alert("I\'m sorry, " + name + ", according to company policy, the minimum annual income allowed is $30,001 dollars.");
+var maritalSatus = Number(prompt("Are you married, " + name + "?  \n 1. Yes \n 2. No"));
 
-if (income > 30000) alert("Great! We are searching for our next available appoinment.  You will be notified when we have found an opening!");
+console.log(maritalSatus);
 
-//Definging conditionals for the outcome of the if statements 
+//I am prompting the user to see if their spouse will be attending the presentation
 
-if (income <= 50000 && age <= 35 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Sunday morning at 10:00 a.m.!  See you there!");
+if (maritalSatus === 1) {var bothAttending = Number(prompt("Will your spouse be attending the presentation with you? \n 1. Yes \n 2. No"));
+                        }
 
-//Defining conditionals for certain qualification brackets 
+//If the guest is married, they cannot attend the presentation unless their spouse attends as well
 
-if (income <= 75000 && income > 50000 && age > 35 && age <= 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Monday morning at 10:00 a.m.!  See you there!");
+                        if (maritalSatus === 1 && bothAttending === 2) {console.log("I'm sorry, " + name + ".  Due to company regulations, you are unable to schedule a presentation until your spouse is able to attend as well.");
 
-//Defining conditionals for certain qualification brackets 
 
-if (income > 75000 && age > 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Tuesday morning at 10:00 a.m.!  See you there!");
-
-//Definging conditionals for the outcome of the if statements 
-
-if (income <= 50000 && age <= 35 && maritalSatus === 1) alert("Thank you, " + name + "!  Your appointment is set for Sunday afternoon at 1:00 p.m.!  See you there!");
-
-//Defining conditionals for certain qualification brackets 
-
-if (income <= 75000 && income > 50000 && age > 35 && age <= 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Monday afternoon at 1:00 p.m.!  See you there!");
-
-//Defining else conditional for certain qualification brackets 
-
-else alert("Thank you, " + name + "!  Your appointment is set for Tuesday afternoon at 1:00 p.m.!  See you there!");
+                        } else if (bothAttending === 1) {console.log("Congratulations! We would love to invite you to come visit us!");
+                                                        }
+if (maritalSatus === 2) {console.log("Congratulations! We would love to invite you to come visit us!");
+                                         
+                                                        
+                        }
+                }}
