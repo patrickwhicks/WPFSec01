@@ -81,6 +81,6 @@ var moneyEarned = moneyEarned.toFixed(2);
 
 console.log(moneyEarned);
 
-if(profit > moneyInvested) alert("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would make a $" + moneyEarned + " dollar profit on the $" + moneyInvested + " dollars that you invested.");
+if(profit > moneyInvested) console.log("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would make a $" + moneyEarned + " dollar profit on the $" + moneyInvested + " dollars that you invested.");
 
-if(profit < moneyInvested) alert("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would lose money based upon your $" + moneyInvested + " dollars you have invested.");
+if(profit < moneyInvested) console.log("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would lose money based upon your $" + moneyInvested + " dollars you have invested.");
