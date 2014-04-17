@@ -42,3 +42,8 @@ console.log(btcBlock);
 var dailyShare = ((86400 / shareTime) * btcBlock);
 
 console.log(dailyShare);
+
+var btcValue = Number(prompt("What is the current value of one Bitcoin, " + name + "?"));
+
+console.log(btcValue);
+
