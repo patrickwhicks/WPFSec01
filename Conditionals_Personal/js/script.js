@@ -47,3 +47,10 @@ var btcValue = Number(prompt("What is the current value of one Bitcoin, " + name
 
 console.log(btcValue);
 
+//I am calculating the daily value of the bitcoins mined
+
+var dailyProfit = dailyShare * btcValue;
+
+console.log(dailyProfit);
+
+
