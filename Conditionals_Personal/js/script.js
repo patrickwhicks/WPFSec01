@@ -19,6 +19,14 @@ var gH = Number(prompt("What is your current hardware's hash rate, " + name + "?
 
 console.log(gH);
 
+//I am asking for the investment that user has made on his hardware, and defining the decimal place
+
+var moneyInvested = Number(prompt("How much money did you invest in your mining hardware, " + name + "?"));
+
+moneyInvested = moneyInvested.toFixed(2);
+
+console.log(moneyInvested);
+
 //Translating gH to rational number
 
 var hashRate = Number((gH * 1000000000));
@@ -54,14 +62,6 @@ var dailyProfit = dailyShare * btcValue;
 var dailyProfit = dailyProfit.toFixed(2);
 
 console.log(dailyProfit);
-
-//I am asking for the investment that user has made on his hardware, and defining the decimal place
-
-var moneyInvested = Number(prompt("How much money did you invest in your mining hardware, " + name + "?"));
-
-moneyInvested = moneyInvested.toFixed(2);
-
-console.log(moneyInvested);
 
 //I am prompting the user to add in the number of days he plans to mine
 
