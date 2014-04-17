@@ -36,3 +36,9 @@ console.log(shareTime);
 var btcBlock = Number(prompt(name + ", how many bitcoins come in a block currently?"));
                       
 console.log(btcBlock);
+
+//Figureing out how many bitcoins their computer will mine in one day
+
+var dailyShare = ((86400 / shareTime) * btcBlock);
+
+console.log(dailyShare);
