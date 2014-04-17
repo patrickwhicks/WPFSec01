@@ -22,3 +22,8 @@ if (age < 23) alert("I\'m sorry, " + name + ".  You must be at least 23 years ol
 if (age >= 23 ) var maritalSatus = Number(prompt("Great!  Are you married, " + name + "? \n 1. Yes \n 2. No"));
 
 console.log(maritalSatus);
+
+if (maritalSatus == 1) var spouseName = prompt("And what is your spouse\'s name, " + name +"?");
+
+if (maritalSatus == 1) var bothAttending = Number(prompt("Will " + spouseName + " be attending the presentation with you? \n 1. Yes \n 2. No"));
+
