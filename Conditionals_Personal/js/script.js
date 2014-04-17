@@ -69,3 +69,8 @@ var daysMining = Number(prompt("How many days will you be mining Bitcoins, " + n
 
 console.log(daysMining);
 
+//I am defining var profit according to inputed answers
+
+var profit = dailyProfit  * daysMining; 
+
+console.log(profit);
