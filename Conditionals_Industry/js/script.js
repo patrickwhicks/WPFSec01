@@ -51,5 +51,12 @@ console.log(income);
 
 if (income <= 30000) alert("I\'m sorry, " + name + ", according to company policy, the minimum annual income allowed is $30,001 dollars.");
 
+if (income > 30000) alert("Great! We are searching for our next available appoinment.  You will be notified when we have found an opening!");
 
+//Definging conditionals for the outcome of the if statements 
 
+if (income <= 50000 && age <= 35 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Sunday morning at 10:00 a.m.!  See you there!");
+
+//Defining conditionals for certain qualification brackets 
+
+if (income <= 75000 && income > 50000 && age > 35 && age <= 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Monday morning at 10:00 a.m.!  See you there!");
