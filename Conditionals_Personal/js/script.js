@@ -33,7 +33,6 @@ console.log(shareTime);
 
 //Prompting user for the current bitcoin block level
 
-var btcBlock = Number(prompt(name + ", how many bitcoins come in a block currently?");
+var btcBlock = Number(prompt(name + ", how many bitcoins come in a block currently?"));
                       
 console.log(btcBlock);
-
