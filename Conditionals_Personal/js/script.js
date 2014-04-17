@@ -74,3 +74,7 @@ console.log(daysMining);
 var profit = dailyProfit  * daysMining; 
 
 console.log(profit);
+
+if(profit > moneyInvested) alert("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would make a profit on the $" + moneyInvested + " dollars that you invested.");
+
+if(profit < moneyInvested) alert("According to today's Bitcoin value and difficulty level, if you mined for " + daysMining + " days, you would lose money based upon your $" + moneyInvested + " dollars you have invested.");
