@@ -6,3 +6,8 @@
 var name = prompt("Hello! Please enter your name.");
 
 console.log(name);
+
+//Prompt the user for their age and define as a numerical value
+
+var age = Number(prompt("Thanks, " + name + "!  How old are you?"));
+
