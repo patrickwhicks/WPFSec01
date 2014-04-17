@@ -45,3 +45,11 @@ if (bothAttending == 2) alert("I\'m sorry, " + name + ", due to company regulati
 
 if (bothAttending == 1 || maritalSatus == 2 ) var income = Number(prompt("What is your annual household income?"));
 
+console.log(income);
+
+//Defining the variable outcome for var income
+
+if (income <= 30000) alert("I\'m sorry, " + name + ", according to company policy, the minimum annual income allowed is $30,001 dollars.");
+
+
+
