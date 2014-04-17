@@ -43,5 +43,5 @@ if (bothAttending == 2) alert("I\'m sorry, " + name + ", due to company regulati
 
 //Defining var income for the outcome
 
-if (bothAttending == 1 ) var income = Number(prompt("What is your annual household income?"));
+if (bothAttending == 1 || maritalSatus == 2 ) var income = Number(prompt("What is your annual household income?"));
 
