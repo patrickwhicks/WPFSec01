@@ -13,8 +13,8 @@ var difficulty = Number(prompt(name + ", what is the current bitcoing mining dif
 
 console.log(difficulty);
 
-//Prompt user for the GH/s level of their hardware
+//Prompt user for the hash rate of their hardware
 
-var gH = Number(prompt("What is your current hardware's GH/s level, " + name + "?"));
+var hashRate = Number(prompt("What is your current hardware's hash rate, " + name + "?"));
 
-console.log(gH);
+console.log(hashRate);
