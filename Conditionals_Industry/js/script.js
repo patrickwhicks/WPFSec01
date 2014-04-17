@@ -60,3 +60,7 @@ if (income <= 50000 && age <= 35 && maritalSatus === 2) alert("Thank you, " + na
 //Defining conditionals for certain qualification brackets 
 
 if (income <= 75000 && income > 50000 && age > 35 && age <= 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Monday morning at 10:00 a.m.!  See you there!");
+
+//Defining conditionals for certain qualification brackets 
+
+if (income > 75000 && age > 55 && maritalSatus === 2) alert("Thank you, " + name + "!  Your appointment is set for Tuesday morning at 10:00 a.m.!  See you there!");
