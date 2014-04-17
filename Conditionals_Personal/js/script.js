@@ -63,3 +63,7 @@ moneyInvested = moneyInvested.toFixed(2);
 
 console.log(moneyInvested);
 
+var daysMining = Number(prompt("How many days will you be mining Bitcoins, " + name + "?"));
+
+console.log(daysMining);
+
