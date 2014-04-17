@@ -30,3 +30,10 @@ console.log(hashRate);
 var shareTime = ((difficulty * 4294967296) / hashRate);
 
 console.log(shareTime);
+
+//Prompting user for the current bitcoin block level
+
+var btcBlock = Number(prompt(name + ", how many bitcoins come in a block currently?");
+                      
+console.log(btcBlock);
+
