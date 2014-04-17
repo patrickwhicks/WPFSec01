@@ -54,3 +54,12 @@ var dailyProfit = dailyShare * btcValue;
 var dailyProfit = dailyProfit.toFixed(2);
 
 console.log(dailyProfit);
+
+//I am asking for the investment that user has made on his hardware, and defining the decimal place
+
+var moneyInvested = Number(prompt("How much money did you invest in your mining hardware, " + name + "?"));
+
+moneyInvested = moneyInvested.toFixed(2);
+
+console.log(moneyInvested);
+
