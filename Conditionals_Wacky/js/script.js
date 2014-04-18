@@ -15,19 +15,19 @@ console.log(money);
 
 //Prompting the user for the victim's office width
 
-var officeWidth = Number(prompt("How wide is your boss' office?"));
+var officeWidth = Number(prompt("How wide is your boss' office in feet?"));
 
 console.log(officeWidth);
 
 //Prompting the user for the victim's office length
 
-var officeLength = Number(prompt("How long is your boss' office?"));
+var officeLength = Number(prompt("How long is your boss' office in feet?"));
 
 console.log(officeLength);
 
 //Prompting the user for the victim's office height
 
-var officeHeight = Number(prompt("How tall is your boss' office?"));
+var officeHeight = Number(prompt("How tall is your boss' office in feet?"));
 
 console.log(officeHeight);
 
@@ -35,6 +35,7 @@ console.log(officeHeight);
 
 var officeArea = (officeLength * officeWidth * officeHeight);
 
+console.log("Your boss' office will require " + officeArea + " square feet of packaging peanuts.");
 var peanuts = Number(prompt("How much does a square foot of packaging peanuts cost at your local office supply store?"));
                      
 console.log(peanuts);
