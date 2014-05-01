@@ -17,7 +17,10 @@ var calcCoffee = function(numberEmployees, numberCups, coffeeUsed) {
 
 var a = calcCoffee(Number(prompt("How many employees will be drinking coffee today?")), Number(prompt("How many cups of coffee can your tired employees drink each?")), Number(prompt("How many bags of coffee does it take per pot to wake your men up, " + name + "?")));
 
+var a = a.toFixed(0);
+
 var goBuy = a - coffee; 
 
 console.log("You currently have " + coffee + " bags of coffee, " + name + ".  You will need " + a + " bags of coffee to wake your men up!");
 
+(coffee >= a) ? console.log("You're well prepared for your work day, " + name + ", now get to brewing!") : console.log("You need to run to the store and get " + goBuy + " bags of coffee, stat!  I think I hear them yawning already!");
