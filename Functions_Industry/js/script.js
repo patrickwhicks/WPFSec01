@@ -14,6 +14,7 @@ var calcCoffee = function(numberEmployees, numberCups, coffeeUsed) {
     return coffeeNeeded;
 }
 
+//I am invoking the anonumous function
 
 var a = calcCoffee(Number(prompt("How many employees will be drinking coffee today?")), Number(prompt("How many cups of coffee can your tired employees drink each?")), Number(prompt("How many bags of coffee does it take per pot to wake your men up, " + name + "?")));
 
