@@ -5,11 +5,17 @@
 var name = prompt("Hello fellow caffine enthusiast!  What is your name?");
 
 
-//Prompt user for the amount of coffee left
 
-var coffeeLeft = Number(prompt("How many bags of coffee do you have left, " + name + "."));
+//Staring the Anonymous Function
 
-var numberEmployees = Number(prompt("How many employees will be drinking coffee today?"));
 
-var numberCups = Number(prompt("How many cups of coffee can your tired employees drink each?"));
+var calcCoffee = function(numberEmployees, numberCups, coffeeUsed) {
+    var coffeeNeeded = ((numberEmployees * numberCups)/12) * coffeeUsed;
+    return coffeeNeeded;
+}
 
+
+var a = calcCoffee(Number(prompt("How many employees will be drinking coffee today?")), Number(prompt("How many cups of coffee can your tired employees drink each?")), Number(prompt("How many bags of coffee does it take per pot to wake your men up, " + name + "?")));
+
+
+console.log(a);
