@@ -13,7 +13,8 @@ var vehicle = Number(prompt("What type of vehicle are you traveling in, " + name
 if (vehicle === 1) { var speed = 60; } else if (vehicle === 2) {var speed = 600; } else { var speed = 670616629; 
                                                                                         
 }
-    
+   //I am starting my normal function
+
 function calcTravel(){
         var distance = speed * travelTime; 
         console.log("You have traveled exactly " + distance + " miles since you began traveling, " + name + "!");
