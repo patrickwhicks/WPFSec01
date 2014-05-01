@@ -14,8 +14,8 @@ if (poolShape === 1) { var width = Number(prompt("What is the width of your pool
                     var length = Number(prompt("What is the length of your pool?"));
                     var depth = Number(prompt("What is the average depth of your pool?"));
                     var gallons = ((length * width * depth) * 7.48);
-                    
-                    //Printing the result to the console
+                   
+                    //Printing the result to the console 
                     console.log(name + ", you will need " + gallons + " gallons of water to fill your new pool!");
     
                      } //Defining the else if portion of the conditional
@@ -26,4 +26,6 @@ else if (poolShape === 2) { var radius = Number(prompt("What is the radius of yo
                            //Printing the result to the console
                            console.log(name + ", you will need " + gallons + " gallons of water to fill your new pool!");
                           }
+else { console.log("I'm sorry, " + name + ", you have entered some information incorrectly.  Please refresh and try again.") 
+     }
                                                   
