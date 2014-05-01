@@ -25,7 +25,9 @@ else if (poolShape === 2) { var radius = Number(prompt("What is the radius of yo
                             var gallons = gallons.toFixed(0);
                            //Printing the result to the console
                            console.log(name + ", you will need " + gallons + " gallons of water to fill your new pool!");
-                          }
+                          } 
+//I am settting up the else conditional 
+
 else { console.log("I'm sorry, " + name + ", you have entered some information incorrectly.  Please refresh and try again.") 
      }
                                                   
