@@ -10,11 +10,13 @@ var vehicle = Number(prompt("What type of vehicle are you traveling in, " + name
 
 //I am starting my if conditional
 
-if (vehicle === 1) { var speed = 60; } else if (vehicle === 2) {var speed = 600; } else { var speed = 670616629; }
+if (vehicle === 1) { var speed = 60; } else if (vehicle === 2) {var speed = 600; } else { var speed = 670616629; 
+                                                                                        
+}
     
-    function calcTravel(){
-        var distance = speed *travelTime; 
-        return distance;
+function calcTravel(){
+        var distance = speed * travelTime; 
         console.log("You have traveled exactly " + distance + " miles since you began traveling, " + name + "!");
 }
-console.log(speed);
+
+calcTravel(); 
